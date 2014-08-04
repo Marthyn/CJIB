@@ -1,0 +1,4 @@
+/*/.env
+*.yml
+./GBA/Config/*.yml
+./RDW/Config/*.yml
