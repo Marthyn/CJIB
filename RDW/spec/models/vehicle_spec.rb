@@ -1,5 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe Vehicle, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe Vehicle, type: :model do
+  describe "associations" do
+    it { is_expected.to belong_to(:vehicles) }
+  end
 end
