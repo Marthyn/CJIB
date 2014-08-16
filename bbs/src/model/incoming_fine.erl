@@ -1,0 +1,2 @@
+-module(incoming_fine, [Id, Speed, LicensePlate]).
+-compile(export_all).

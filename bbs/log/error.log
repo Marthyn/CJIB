@@ -1,0 +1,20 @@
+2014-08-16 14:50:33.271 [error] <0.271.0> GET / [bbs] 404 0ms
+2014-08-16 14:52:29.656 [error] <0.261.0> Missing or invalid boss.routes file in "/Users/Marthyn/Code/CJIB/bbs/priv/bbs.routes"
+{error,{25,erl_parse,["syntax error before: ",[]]}}
+
+2014-08-16 14:52:29.658 [error] <0.271.0> GET / [bbs] 404 0ms
+2014-08-16 14:52:30.387 [error] <0.261.0> Missing or invalid boss.routes file in "/Users/Marthyn/Code/CJIB/bbs/priv/bbs.routes"
+{error,{25,erl_parse,["syntax error before: ",[]]}}
+
+2014-08-16 14:52:30.388 [error] <0.272.0> GET / [bbs] 404 0ms
+2014-08-16 14:52:33.030 [error] <0.261.0> Missing or invalid boss.routes file in "/Users/Marthyn/Code/CJIB/bbs/priv/bbs.routes"
+{error,{25,erl_parse,["syntax error before: ",[]]}}
+
+2014-08-16 14:52:33.040 [error] <0.274.0> GET /fines [bbs] 404 0ms
+2014-08-16 14:58:04.674 [error] <0.278.0> GET /greeting/hello [bbs] 404 0ms
+2014-08-16 14:58:33.193 [error] <0.261.0> gen_server <0.261.0> terminated with reason: {'module could not be loaded',[{bbs_fines_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2014-08-16 14:58:33.193 [error] <0.261.0> CRASH REPORT Process <0.261.0> with 0 neighbours exited with reason: call to undefined function bbs_fines_controller:module_info(attributes) in gen_server:terminate/6 line 746
+2014-08-16 14:58:33.193 [error] <0.281.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,[{bbs_fines_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[<0.261.0>,{route,"/fines"}]}}. Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,237}]},{boss_web_controller_handle_request,process_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,228}]},{boss_web_controller_handle_request,set_timer,7,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,148}]},{boss_web_controller_handle_request,build_dynamic_response,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,122}]},{boss_web_controller_handle_request,handle_request,3,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-08-16 14:58:33.194 [error] <0.260.0> Supervisor {<0.260.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,bbs},{controllers,[]}]) at <0.261.0> exit with reason call to undefined function bbs_fines_controller:module_info(attributes) in context child_terminated
+2014-08-16 14:58:57.806 [error] <0.286.0> GET /greeting/hello [bbs] 404 0ms
+2014-08-16 15:01:18.130 [error] <0.303.0> GET /fines/hello [bbs] 404 0ms

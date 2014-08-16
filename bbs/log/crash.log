@@ -1,0 +1,45 @@
+2014-08-16 14:50:33 =ERROR REPORT====
+GET / [bbs] 404 0ms2014-08-16 14:52:29 =ERROR REPORT====
+Missing or invalid boss.routes file in "/Users/Marthyn/Code/CJIB/bbs/priv/bbs.routes"
+{error,{25,erl_parse,["syntax error before: ",[]]}}
+2014-08-16 14:52:29 =ERROR REPORT====
+GET / [bbs] 404 0ms2014-08-16 14:52:30 =ERROR REPORT====
+Missing or invalid boss.routes file in "/Users/Marthyn/Code/CJIB/bbs/priv/bbs.routes"
+{error,{25,erl_parse,["syntax error before: ",[]]}}
+2014-08-16 14:52:30 =ERROR REPORT====
+GET / [bbs] 404 0ms2014-08-16 14:52:33 =ERROR REPORT====
+Missing or invalid boss.routes file in "/Users/Marthyn/Code/CJIB/bbs/priv/bbs.routes"
+{error,{25,erl_parse,["syntax error before: ",[]]}}
+2014-08-16 14:52:33 =ERROR REPORT====
+GET /fines [bbs] 404 0ms2014-08-16 14:58:04 =ERROR REPORT====
+GET /greeting/hello [bbs] 404 0ms2014-08-16 14:58:33 =ERROR REPORT====
+** Generic server <0.261.0> terminating 
+** Last message in was {route,"/fines"}
+** When Server state == {state,bbs,["bbs_fines_controller"],45086,49183,53280}
+** Reason for termination == 
+** {'module could not be loaded',[{bbs_fines_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2014-08-16 14:58:33 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.261.0>
+    registered_name: []
+    exception exit: {{undef,[{bbs_fines_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.260.0>,boss_web,boss_sup,<0.92.0>]
+    messages: []
+    links: [<0.260.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 5327
+  neighbours:
+2014-08-16 14:58:33 =SUPERVISOR REPORT====
+     Supervisor: {<0.260.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{bbs_fines_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.261.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,bbs},{controllers,[]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-08-16 14:58:57 =ERROR REPORT====
+GET /greeting/hello [bbs] 404 0ms2014-08-16 15:01:18 =ERROR REPORT====
+GET /fines/hello [bbs] 404 0ms
